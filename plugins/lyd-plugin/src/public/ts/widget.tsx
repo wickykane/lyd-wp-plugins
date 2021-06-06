@@ -6,7 +6,9 @@
 
 import "@lyd-plugins/utils"; // Import once for startup polyfilling (e. g. setimmediate)
 import { render } from "react-dom";
-import { Widget } from "./widget/";
+import { Widget } from "./widget/index";
+import { ShortCode } from "./shortcode/index";
+
 import "./style/widget.scss";
 
 // Query DOM for all widget wrapper divs
@@ -14,3 +16,9 @@ const widgets = document.querySelectorAll("div.react-demo-wrapper");
 
 // Iterate over the DOM nodes and render a React component into each node
 widgets.forEach((item) => render(<Widget />, item));
+
+// Render new short code here
+const shortcode = document.getElementById("lyd-my-document");
+if (shortcode) {
+    render(<ShortCode />, shortcode);
+}

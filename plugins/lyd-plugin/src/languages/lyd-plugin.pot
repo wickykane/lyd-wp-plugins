@@ -25,6 +25,10 @@ msgstr ""
 msgid "wickykane"
 msgstr ""
 
+#: inc/view/menu/Page.php:30
+msgid "LightYearDocs"
+msgstr ""
+
 #: inc/view/widget/Widget.php:24
 msgid "A widget that demonstrates using React."
 msgid_plural "Widgets that demonstrates using React."

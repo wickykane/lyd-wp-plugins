@@ -27,11 +27,11 @@ class Page {
      * Add new menu page.
      */
     public function admin_menu() {
-        $pluginName = $this->getCore()->getPluginData()['Name'];
+        $pluginName = _('LightYearDocs');
         add_menu_page($pluginName, $pluginName, 'manage_options', self::COMPONENT_ID, [
             $this,
             'render_component_library'
-        ]);
+        ], 'dashicons-format-aside');
     }
 
     /**

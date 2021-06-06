@@ -33,6 +33,8 @@ define('LYD_NS', 'LYD\\WPRJSS');
 define('LYD_DB_PREFIX', 'lyd'); // The table name prefix wp_{prefix}
 define('LYD_OPT_PREFIX', 'lyd'); // The option name prefix in wp_options
 define('LYD_SLUG_CAMELCASE', lcfirst(str_replace('-', '', ucwords(LYD_SLUG, '-'))));
+define('LYD_MY_DOCUMENT', 'lyd-my-document');
+
 //define('LYD_TD', ''); This constant is defined in the core class. Use this constant in all your __() methods
 //define('LYD_VERSION', ''); This constant is defined in the core class
 //define('LYD_DEBUG', true); This constant should be defined in wp-config.php to enable the Base#debug() method

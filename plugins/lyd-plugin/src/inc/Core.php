@@ -4,6 +4,7 @@ use LYD\WPRJSS\base\Core as BaseCore;
 use LYD\WPRJSS\rest\HelloWorld;
 use LYD\WPRJSS\view\menu\Page;
 use LYD\WPRJSS\view\widget\Widget;
+use LYD\WPRJSS\view\shortcode\ShortCode;
 
 // @codeCoverageIgnoreStart
 defined('ABSPATH') or die('No script kiddies please!'); // Avoid direct file request
@@ -26,7 +27,8 @@ class Core extends BaseCore {
         parent::__construct();
 
         // Register all your before init hooks here
-        add_action('widgets_init', [$this, 'widgets_init']);
+        // add_action('widgets_init', [$this, 'widgets_init']);
+        add_action('init', [ShortCode::instance(), 'add_page_shortcode']);
     }
 
     /**
