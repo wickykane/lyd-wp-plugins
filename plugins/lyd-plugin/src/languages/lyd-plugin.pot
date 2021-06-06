@@ -1,0 +1,32 @@
+# Copyright (C) 2021 wickykane
+# This file is distributed under the same license as the lyd-plugin plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: lyd-plugin 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/src\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: n/a\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.5.0\n"
+
+#. Plugin Name of the plugin
+msgid "lyd-plugin"
+msgstr ""
+
+#. Description of the plugin
+msgid "A plugin for LYD Official"
+msgstr ""
+
+#. Author of the plugin
+msgid "wickykane"
+msgstr ""
+
+#: inc/view/widget/Widget.php:24
+msgid "A widget that demonstrates using React."
+msgid_plural "Widgets that demonstrates using React."
+msgstr[0] ""
+msgstr[1] ""

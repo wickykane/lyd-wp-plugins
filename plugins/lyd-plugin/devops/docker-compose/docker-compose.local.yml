@@ -1,0 +1,13 @@
+# This file overrides the file from docker-compose.yml
+
+version: "3"
+
+services:
+    wordpress:
+        volumes:
+            # Composer PHP files
+            - ../../plugins/lyd-plugin/vendor:/var/www/html/wp-content/plugins/lyd-plugin/vendor
+            # The main plugin source
+            - ../../plugins/lyd-plugin/src:/var/www/html/wp-content/plugins/lyd-plugin
+            # Devops scripts
+            - ../../plugins/lyd-plugin/devops/scripts:/scripts/plugins/lyd-plugin
