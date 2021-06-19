@@ -45,9 +45,6 @@ class Assets {
             $this->enqueueStyle('widget', 'widget.css');
         }
 
-        wp_enqueue_script('lyd-deps1', 'https://eu.xpressdox.com/Integration/LoadScript.ashx?id=jquery', null);
-        wp_enqueue_script('lyd-deps2', 'https://eu.xpressdox.com/Integration/LoadScript.ashx?id=xpressdoxLoader', null);
-
         // Localize script with server-side variables
         wp_localize_script($handle, LYD_SLUG_CAMELCASE, $this->localizeScript($type));
     }

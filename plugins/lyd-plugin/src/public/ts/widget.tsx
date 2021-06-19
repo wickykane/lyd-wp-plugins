@@ -8,8 +8,9 @@ import "@lyd-plugins/utils"; // Import once for startup polyfilling (e. g. setim
 import { render } from "react-dom";
 import { Widget } from "./widget/index";
 import { ShortCode } from "./shortcode/index";
-
+import { MyDocumentPage } from "./shortcode/my-document";
 import "./style/widget.scss";
+import "antd/dist/antd.css";
 
 // Query DOM for all widget wrapper divs
 const widgets = document.querySelectorAll("div.react-demo-wrapper");
@@ -21,4 +22,9 @@ widgets.forEach((item) => render(<Widget />, item));
 const shortcode = document.getElementById("lyd-my-document");
 if (shortcode) {
     render(<ShortCode />, shortcode);
+}
+
+const myDocumentPage = document.getElementById("lyd-my-document-page");
+if (myDocumentPage) {
+    render(<MyDocumentPage />, myDocumentPage);
 }

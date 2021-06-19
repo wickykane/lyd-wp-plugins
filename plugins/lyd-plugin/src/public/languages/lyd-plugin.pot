@@ -51,10 +51,10 @@ msgstr ""
 msgid "Remove"
 msgstr ""
 
-#: widget.js:740
+#: widget.js:914
 msgid "Hello, World!"
 msgstr ""
 
-#: widget.js:740
+#: widget.js:914
 msgid "I got generated from your new plugin!"
 msgstr ""

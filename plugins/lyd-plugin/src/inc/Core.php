@@ -29,6 +29,9 @@ class Core extends BaseCore {
         // Register all your before init hooks here
         // add_action('widgets_init', [$this, 'widgets_init']);
         add_action('init', [ShortCode::instance(), 'add_page_shortcode']);
+        add_action('init', function() {
+            ShortCode::instance()->add_page_shortcode('-page');
+        });
     }
 
     /**
@@ -41,6 +44,15 @@ class Core extends BaseCore {
         add_action('admin_enqueue_scripts', [$this->getAssets(), 'admin_enqueue_scripts']);
         add_action('wp_enqueue_scripts', [$this->getAssets(), 'wp_enqueue_scripts']);
         add_action('admin_menu', [Page::instance(), 'admin_menu']);
+    }
+
+    /**
+     * function to parse xml to json
+     * */
+    public static function parseXMLToJSON ($xml) {
+        $json = json_encode(simplexml_load_string($xml));
+        $array = json_decode($json, true);
+        return $array;
     }
 
     /**

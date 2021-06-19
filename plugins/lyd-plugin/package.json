@@ -132,6 +132,7 @@
     },
     "dependencies": {
         "@lyd-plugins/utils": "^1.0.0",
+        "antd": "^4.16.3",
         "core-js": "3.6.5",
         "enzyme": "^3.11.0",
         "enzyme-adapter-react-16": "^1.15.2",
@@ -139,6 +140,7 @@
         "lodash": "^4.17.15",
         "mobx": "^4.15.0",
         "mobx-react": "^6.2.2",
+        "query-string": "^6.0.0",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
         "react-test-renderer": "^16.13.1"
@@ -161,6 +163,7 @@
         "@types/jest": "^26.0.3",
         "@types/jquery": "^3.5.0",
         "@types/mini-css-extract-plugin": "^0.9.1",
+        "@types/query-string": "^6.3.0",
         "@types/react": "^16.9.41",
         "@types/react-dom": "^16.9.8",
         "@types/url-parse": "^1.4.3",

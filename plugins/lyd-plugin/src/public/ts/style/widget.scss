@@ -1,3 +1,25 @@
 .react-boilerplate-widget {
     background-color: red;
 }
+
+.lyd-document-container {
+    padding: 2rem;
+}
+.lyd-document-container #btnAssembleDocument {
+    margin-top: 3rem !important;
+}
+.lyd-document-container #divInterviewRight {
+    padding: 1rem;
+}
+
+.lyd-my-document-page {
+    display: flex;
+    flex-wrap: wrap;
+    .left-col {
+        flex: 1;
+        min-width: 300px;
+    }
+    .right-col {
+        flex: 3;
+    }
+}
